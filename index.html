@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magiclabs Assessment</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Custome Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- JQuery Datepicker -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+</head>
+<body>  
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">  
+      <legend>
+        <a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!
+      </legend>
+      
+      <div id="lbl">
+        <label id="lblMessage" style="display:none;"></label>
+      </div>      
+
+      <form action="signup.php" method="post" class="form" id="frmSignup" role="form">
+
+        <label for="">Account type </label>
+        <label class="radio-inline">
+          <input type="radio" name="accountType" required id="txtAccountType1" value="1" />
+          Company
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="accountType" id="txtAccountType2" value="2" />
+          User
+        </label>
+        <br>
+        <br>
+
+        <input class="form-control" name="txtEmail" placeholder="Email" type="email" required />
+        <input class="form-control" name="txtPhone" placeholder="Phone" type="text" required />
+        <input class="form-control" id="txtPassword" name="txtPassword" placeholder="Password" type="password" required />
+        <input class="form-control" id="txtRepassword" name="txtRepassword" placeholder="Re-enter your Password" type="password" required />
+
+        <div id="frmUser" style="display: none;">            
+          <input class="form-control" name="txtFirstname" placeholder="Firstname" type="text" />
+          <input class="form-control" name="txtLastname" placeholder="Lastname" type="text" />          
+          <input class="form-control" id="txtDob" name="txtDob" placeholder="Your birthday" type="text" />           
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="rdoGender1" value="1" />
+            Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="rdoGender2" value="0" />
+            Female
+          </label>
+        </div>
+
+        <div id="frmCompany"  style="display: none;">
+          <input class="form-control" name="txtName" placeholder="Name" type="text" />
+          <input class="form-control" name="txtAddress" placeholder="Address" type="text" />
+        </div>
+
+        <br />
+        <br />
+
+        <button class="btn btn-lg btn-primary btn-block" id="btnSubmit" type="submit">
+          Sign up
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- Custom script -->
+  <!-- JQuery -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

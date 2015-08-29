@@ -1,0 +1,16 @@
+#page-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.form-control { 
+  margin-bottom: 10px; 
+}
+
+#lblMessage {
+  color: red;
+}
+
+#lbl {
+  text-align: center;
+}
